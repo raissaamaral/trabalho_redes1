@@ -90,6 +90,14 @@ O protocolo TCP (Transmission Control Protocol) foi escolhido para garantir a in
     ```
     > **Observação:** Abra dois clientes para jogar ativamente e quantos quiser para assistir como espectadores.
 
+    1) No PC 2 (ou em outro computador que irá se conectar), abra o terminal e digite ipconfig.
+    2) Localize o endereço IPv4 da sua rede Wi-Fi.
+    3) Execute o cliente passando o IP do servidor, por exemplo:
+     ```bash
+    python client_tcp.py 192.168.x.x
+    ```
+
+
 ## 6. Estrutura de arquivos
 ```.
 ├── client_tcp.py
