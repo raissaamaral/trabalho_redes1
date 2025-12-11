@@ -7,7 +7,7 @@ import sys
 from protocol import serialize_message
 
 # -------------------- CONFIGURAÇÃO DO SERVIDOR ----------------------
-SERVER_HOST = "127.0.0.1"  # IP do servidor
+SERVER_HOST = sys.argv[1] if len(sys.argv) > 1 else "127.0.0.1"  # IP do servidor (padrão: localhost)
 SERVER_PORT = 65432        # Porta do servidor
 
 # -------------------- INICIALIZAÇÃO DO PYGAME ----------------------
